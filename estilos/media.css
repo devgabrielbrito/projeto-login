@@ -1,1 +1,132 @@
 @charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+        box-sizing: border-box;
+    }
+
+    main {
+        width: 80%;
+        height: 50%;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1.1em;
+    }
+
+    div {
+        border-radius: 20px;
+        display: inline-block;
+        position: relative;
+        background-position: right center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 35%;
+    }
+
+    section {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        width: 65%;
+        height: calc(100% - 20px);
+        margin-top: 0;
+        padding: 0;
+        border-radius: 0 20px 20px 0;
+        padding: 10px;
+        transition: .3s
+    }
+
+    input#ilogin, input#isenha {
+        width: calc(100% - 61px);
+        height: 44px;
+    }
+
+    input#ienviar, input#iesqueci {
+        padding: 15px;
+        font-size: 1em;
+    }
+    
+    span.material-symbols-outlined {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    .material-symbols-outlined {
+        height: 34px;
+        padding-top: 12px;
+        transform: translate(0, 5px);
+    }
+}
+
+@media screen and (min-width: 1050px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+        box-sizing: border-box;
+    }
+
+    main {
+        width: 80%;
+        height: 50%;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1.1em;
+    }
+
+    div {
+        border-radius: 20px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        background-position: right center;
+        height: 100%;
+        width: 45%;
+    }
+
+    section {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        width: 55%;
+        height: calc(100% - 20px);
+        margin-top: 0;
+        padding: 0;
+        border-radius: 20px 0 0 20px;
+        padding: 10px;
+        transition: .3s
+    }
+
+    input#ilogin, input#isenha {
+        height: 41px;
+        width: calc(100% - 61px);
+        height: 44px;
+    }
+
+    input#ienviar, input#iesqueci {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    .material-symbols-outlined {
+        height: 34px;
+        transform: translate(0, 5px);
+        padding-top: 12px;
+    }
+}

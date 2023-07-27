@@ -11,23 +11,26 @@
 </head>
 <body>
     <main>
+        <div>
+
+        </div>
         <section>
             <h1>Login</h1>
             <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-            <form action="#" method="GET">
+            <form action="#" method="GET" autocomplete="on">
                 <label for="ilogin"> <span class="material-symbols-outlined">person</span>
-                    <input type="email" name="login" id="ilogin" required placeholder="Seu login">
+                    <input type="email" name="login" id="ilogin" required placeholder="Seu login" autocomplete="email">
                 </label>
 
                 <label for="isenha"> <span class="material-symbols-outlined">vpn_key</span>
                     <input type="password" name="senha" id="isenha" required placeholder="Sua senha">
                 </label>
 
-                <label for="ienviar">
+                <label for="ienviar" class="botao">
                     <input type="submit" name="enviar" id="ienviar" value="Entrar">
                 </label>
 
-                <label for="iesqueci">
+                <label for="iesqueci" class="botao">
                     <input type="button" name="esqueci" id="iesqueci" value="Esqueci a senha">
                 </label>
             </form>

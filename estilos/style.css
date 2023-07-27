@@ -24,17 +24,13 @@ body {
 }
 
 main {
-    background-image: url('../imagens/pexels-thisisengineering-3913025.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 270px;
     height: 630px;
     border-radius: 20px;
+    transform: translate(-50%, -50%);
 }
 
 main h1 {
@@ -51,22 +47,43 @@ main p {
     margin-bottom: 20px;
 }
 
-main label {
-    margin-top: 10px;
+label {
+    padding: 0;
+    border-radius: 10px;
     margin: 5px;
+    background-color: #5f2c82;
+    display: block;
 }
 
-#ilogin, #isenha {
-    height: 22px;
-    transform: translate(-4px, -7px);
+label.botao {
+    background-color: white;
+}
+
+div {
+    height: 50%;
+    background-image: url('../imagens/pexels-thisisengineering-3913025.jpg');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
 }
 
 input#isenha, input#ilogin {
-    width: 189px;
-    margin: auto;
+    margin-bottom: -3px;
+    margin-top: 10px;
+    height: 25px;
+    width: 194px;
     border-radius: 0 10px 10px 0;
-    border: 3px solid #5f2c82;
     padding: 3px;
+    border: none;
+    transform: translate(-5px, -7px);
+}
+
+input#isenha:focus-within, input#ilogin:focus-within {
+    background-color: rgb(226, 226, 226);
+}
+
+input[type=submit] {
+    margin-top: 10px;
 }
 
 input#ienviar {
@@ -102,19 +119,18 @@ input#iesqueci:hover {
     color: #265553;
     transition: 0.3s;
 }
- 
-label {
-    display: block;
-    padding: 0;
-}
 
 section {
     background-color: white;
-    margin-top: 300px;
     height: 310px;
     border-radius: 0 0 20px 20px;
     margin-bottom: 0;
     padding: 10px;
+    transition: .3s
+}
+
+span.material-symbols-outlined {
+    font-size: 25px;
 }
 
 .material-symbols-outlined {
